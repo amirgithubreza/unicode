@@ -8,7 +8,6 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
@@ -16,5 +15,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
-  base: './blob/main/dist/', // IMPORTANT: This makes it work on GitHub Pages!
-})
+  base: "/unicode/",  // ✅ correct
+});

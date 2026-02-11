@@ -1,4 +1,5 @@
 {
+  "homepage": "https://amirgithubreza.github.io/unicode",
   "name": "react-vite-tailwind",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "clsx": "2.1.1",
