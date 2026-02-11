@@ -15,5 +15,9 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
-  base: "/unicode/",  // ✅ correct
+ base: "/unicode/",
+build: {
+  outDir: "docs"
+}
+  // ✅ correct
 });
